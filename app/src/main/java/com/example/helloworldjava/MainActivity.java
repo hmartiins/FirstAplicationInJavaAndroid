@@ -3,9 +3,11 @@ package com.example.helloworldjava;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         Log.i("Activity Status", "onCreate: ");
+    }
+
+    public void newScreen(View view){
+        Intent messageIntent = new Intent(this, NewActivity.class);
+        startActivity(messageIntent);
     }
 
     @Override
