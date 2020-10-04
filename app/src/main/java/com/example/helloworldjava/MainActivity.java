@@ -11,6 +11,8 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    public final static String MESSAGE_ADITIONAL = "com.example.intent.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void newScreen(View view){
+
+
         Intent messageIntent = new Intent(this, NewActivity.class);
+
+        messageIntent.putExtra(MESSAGE_ADITIONAL, "henrique");
+
         startActivity(messageIntent);
     }
 

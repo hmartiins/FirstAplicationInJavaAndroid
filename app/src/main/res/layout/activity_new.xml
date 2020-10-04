@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".NewActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aa"
+        android:textColor="#FF5722"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="355dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
