@@ -6,12 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/lstContacts"
-        android:layout_width="400dp"
-        android:layout_height="700dp"
-        tools:ignore="MissingConstraints" />
-    
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -30,5 +25,29 @@
         android:onClick="newScreen"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/btnFinalize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar" />
+
+    <ListView
+        android:id="@+id/lstContacts"
+        android:layout_width="418dp"
+        android:layout_height="460dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

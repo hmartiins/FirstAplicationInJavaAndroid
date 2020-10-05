@@ -18,6 +18,7 @@ import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
 
@@ -44,6 +45,25 @@ public class MainActivity extends AppCompatActivity {
         } else {
             readContacts();
         }
+
+        Button btnStart = (Button)findViewById(R.id.btnStart);
+        Button btnFinalize = (Button)findViewById(R.id.btnFinalize);
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startService(new Intent(getApplicationContext(), MyService.class));
+            }
+        });
+
+        btnFinalize.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stopService(new Intent(getApplicationContext(), MyService.class));
+            }
+        });
+
+
     }
 
     @Override
