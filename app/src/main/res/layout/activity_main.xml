@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ListView
+        android:id="@+id/lstContacts"
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        tools:ignore="MissingConstraints" />
+    
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
